@@ -1,13 +1,14 @@
 import Meals from "./pages/Meals";
 import ContactPage from "./pages/Contact";
-import Eliseo from "./components/AboutUs";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
+      <Home />    
       <Meals />
       <ContactPage />
-      <Eliseo />
+      
     </>
   );
 }
