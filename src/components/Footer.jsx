@@ -88,6 +88,23 @@ export default function Footer() {
           </div>
         </div>
 
+      <div className="max-w-container-max mx-auto px-margin-desktop mt-stack-lg pt-stack-md border-t border-surface-muted flex flex-col md:flex-row justify-between items-center gap-4">
+        <p className="font-body-md text-body-md text-on-surface-variant opacity-80">
+          © 2024 CulinaryNest. All rights reserved. Nurturing your home cooking.
+        </p>
+        <div className="flex items-center gap-2">
+          <span 
+            className="material-symbols-outlined text-primary"
+            style={{ fontVariationSettings: "'FILL' 1" }}
+          >
+            favorite
+          </span>
+          <span className="font-label-sm text-label-sm text-on-surface-variant">
+            Hecho con amor por cocineros.
+          </span>
+        </div>
+      </div>
+    </footer>
         <div className="max-w-container-max mx-auto px-margin-desktop mt-stack-lg pt-stack-md border-t border-surface-muted flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-body-md text-body-md text-on-surface-variant opacity-80">
             © 2024 CulinaryNest. All rights reserved. Nurturing your home
