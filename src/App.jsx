@@ -1,13 +1,11 @@
-
+import Meals from "./pages/Meals";
 
 function App() {
-  
-
   return (
     <>
-      <h1>Jordan Santander</h1>
+      <Meals />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
