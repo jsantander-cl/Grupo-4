@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 
 
@@ -56,7 +58,7 @@ function Meals() {
   return (
     <div className="bg-[#fcf9f8] min-h-screen text-[#1c1b1b]">
 
-     
+     <Header />
 
       {/* MAIN */}
       <main className="max-w-[1280px] mx-auto px-4 py-8 md:px-10">
@@ -235,12 +237,12 @@ function Meals() {
                 <button className="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-[#e5e2e1]">›</button>
               </div>
             </div>
-
+                
           </div>
         </div>
       </main>
-
-    <Footer />
+        <Footer />
+    
 
     </div>
   );
