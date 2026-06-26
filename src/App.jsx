@@ -1,5 +1,5 @@
-import ContactPage from './pages/Contact';
-import Eliseo from "./components/Eliseo";
+import ContactPage from "./pages/Contact";
+import Eliseo from "./components/AboutUs";
 
 function App() {
   return (
