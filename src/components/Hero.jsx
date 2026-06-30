@@ -14,7 +14,7 @@ export default function Hero() {
         <div 
           className="w-full h-full bg-cover bg-center transition-transform duration-1000 hover:scale-105"
           style={{
-            backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGMygVF7SvbG6fGrM3Lkyu_aNqqWtJG_TmoFMvPJdJ4lQgusleO-GUxUeJxhdAukHX7PlmODZHjBK2X7v8bGFQd7ef9V3Ui94C3e8jrC2xASY5KDhGJqQ3YOG6FtFyOuDgz1831ZeIzG2pZyYpsTt50aWtdC8HW1SdjyXq-q4mvt5v37ZvuOI-ku0M2Y0vn85LbXjYWp9Ra0pOhT9IeVszJ34Oz_Ahd7v5NQBNcd5v-vchYb3DHZQ_08VWKPWyYww9J952_Tc9juI')"
+            backgroundImage: "url(https://st.depositphotos.com/62628780/59708/i/450/depositphotos_597080062-stock-photo-eat-cook-enjoy-family-young.jpg)"
           }}
         >
         </div>
