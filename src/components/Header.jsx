@@ -18,7 +18,7 @@ export default function Header() {
     <header className="bg-[#8A0026] fixed top-0 w-full z-50 shadow-md">
       <nav className="flex justify-between items-center w-full px-6 md:px-12 py-4 max-w-7xl mx-auto">
         <Link to="/" className="text-xl font-bold text-white tracking-wide">
-          CulinaryNest
+          Ambrosía
         </Link>
 
         {/* Menú Desktop */}

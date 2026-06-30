@@ -8,7 +8,7 @@ export default function Footer() {
               href="#"
               className="font-headline-sm text-headline-sm font-bold text-primary mb-4 block"
             >
-              CulinaryNest
+              Ambrosía
             </a>
             <p className="font-body-md text-body-md text-secondary opacity-90 mb-6">
               Nuestra misión es hacer que la cocina casera sea accesible,
