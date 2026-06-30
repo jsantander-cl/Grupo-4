@@ -61,10 +61,10 @@ function Meals() {
      <Header />
 
       {/* MAIN */}
-      <main className="max-w-[1280px] mx-auto px-4 py-8 md:px-10">
+      <main className="max-w-[1280px] mx-auto px-4 py-8 md:px-10 mt-10">
 
         {/* Título de sección */}
-        <section className="mb-8 text-center md:text-left">
+        <section className="mb-8 bt-30 text-center md:text-left">
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-2">
             Nuestras Recetas
           </h1>
