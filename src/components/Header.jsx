@@ -1,42 +1,40 @@
 import { useState } from 'react';
-
+import { NavLink, Link } from 'react-router-dom';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const linkClass = ({ isActive }) =>
+    isActive
+      ? "text-sm font-bold text-white border-b-2 border-white pb-1"
+      : "text-sm font-medium text-white/80 hover:text-white transition-colors";
+
+  const mobileLinkClass = ({ isActive }) =>
+    isActive
+      ? "text-sm text-white font-bold py-2"
+      : "text-sm text-white/80 hover:text-white py-2";
+
   return (
     <header className="bg-[#8A0026] fixed top-0 w-full z-50 shadow-md">
       <nav className="flex justify-between items-center w-full px-6 md:px-12 py-4 max-w-7xl mx-auto">
-        <div className="text-xl font-bold text-white tracking-wide">
+        <Link to="/" className="text-xl font-bold text-white tracking-wide">
           CulinaryNest
-        </div>
+        </Link>
 
         {/* Menú Desktop */}
         <div className="hidden md:flex gap-8 items-center">
-          <a
-            className="text-sm font-medium text-white/80 hover:text-white transition-colors"
-            href="#"
-          >
-            Recipes
-          </a>
-          <a
-            className="text-sm font-medium text-white/80 hover:text-white transition-colors"
-            href="#"
-          >
-            Guides
-          </a>
-          <a
-            className="text-sm font-medium text-white/80 hover:text-white transition-colors"
-            href="#"
-          >
-            About
-          </a>
-          <a
-            className="text-sm font-bold text-white border-b-2 border-white pb-1"
-            href="#"
-          >
+          <NavLink to="/" end className={linkClass}>
+            Home
+          </NavLink>
+          <NavLink to="/meals" className={linkClass}>
+            Meals
+          </NavLink>
+          <NavLink to="/contact" className={linkClass}>
             Contact
-          </a>
+          </NavLink>
+          <NavLink to="/about" className={linkClass}>
+            About
+          </NavLink>
         </div>
 
         <div className="flex items-center gap-4">
@@ -61,18 +59,18 @@ export default function Header() {
         }`}
       >
         <div className="flex flex-col px-6 py-4 gap-4">
-          <a className="text-sm text-white/80 hover:text-white py-2" href="#">
-            Recipes
-          </a>
-          <a className="text-sm text-white/80 hover:text-white py-2" href="#">
-            Guides
-          </a>
-          <a className="text-sm text-white/80 hover:text-white py-2" href="#">
-            About
-          </a>
-          <a className="text-sm text-white font-bold py-2" href="#">
+          <NavLink to="/" end className={mobileLinkClass} onClick={() => setIsMenuOpen(false)}>
+            Home
+          </NavLink>
+          <NavLink to="/meals" className={mobileLinkClass} onClick={() => setIsMenuOpen(false)}>
+            Meals
+          </NavLink>
+          <NavLink to="/contact" className={mobileLinkClass} onClick={() => setIsMenuOpen(false)}>
             Contact
-          </a>
+          </NavLink>
+          <NavLink to="/about" className={mobileLinkClass} onClick={() => setIsMenuOpen(false)}>
+            About
+          </NavLink>
           <button className="w-full text-left text-sm text-white font-bold py-2 border-t border-white/10 mt-2">
             Sign In
           </button>
