@@ -8,7 +8,7 @@ export default function Footer() {
               href="#"
               className="font-headline-sm text-headline-sm font-bold text-primary mb-4 block"
             >
-              CulinaryNest
+              Ambrosía
             </a>
             <p className="font-body-md text-body-md text-secondary opacity-90 mb-6">
               Nuestra misión es hacer que la cocina casera sea accesible,
@@ -88,7 +88,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="max-w-container-max mx-auto px-margin-desktop mt-stack-lg pt-stack-md border-t border-surface-muted flex flex-col md:flex-row justify-between items-center gap-4">
+    </footer>
+        <div className="max-w-container-max mx-auto px-margin-desktop  pt-stack-md border-t border-surface-muted flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-body-md text-body-md text-on-surface-variant opacity-80">
             © 2024 CulinaryNest. All rights reserved. Nurturing your home
             cooking.
@@ -105,7 +106,7 @@ export default function Footer() {
             </span>
           </div>
         </div>
-      </footer>
+      
     </>
   );
 }
